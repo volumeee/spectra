@@ -1,0 +1,6 @@
+{
+  "name": "visual-diff",
+  "version": "0.1.0",
+  "command": "visual-diff",
+  "methods": ["compare"]
+}

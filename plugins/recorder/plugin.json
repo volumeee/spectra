@@ -1,0 +1,6 @@
+{
+  "name": "recorder",
+  "version": "0.1.0",
+  "command": "recorder",
+  "methods": ["record"]
+}

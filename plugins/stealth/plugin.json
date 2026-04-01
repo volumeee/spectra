@@ -1,0 +1,6 @@
+{
+  "name": "stealth",
+  "version": "0.1.0",
+  "command": "stealth",
+  "methods": ["navigate", "screenshot", "scrape"]
+}

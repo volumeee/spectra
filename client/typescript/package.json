@@ -1,0 +1,12 @@
+{
+  "name": "@spectra/client",
+  "version": "0.1.0",
+  "description": "TypeScript client SDK for Spectra headless browser infrastructure",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "license": "MIT"
+}

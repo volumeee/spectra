@@ -1,0 +1,35 @@
+# Go
+bin/
+/spectra
+/spectra-cli
+*.exe
+*.test
+*.out
+vendor/
+
+# Node
+node_modules/
+dist/
+*.tgz
+
+# Rust
+target/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spectra
+spectra.yaml
+spectra.db
+recordings/
+LAUNCH_GUIDE.md
+CATATAN_SPECTRA.md
+*.png
+*.pdf
