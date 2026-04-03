@@ -1,6 +1,7 @@
 package api
 
 import (
+	"io/fs"
 	"net/http"
 	"time"
 
@@ -11,6 +12,7 @@ import (
 	"github.com/spectra-browser/spectra/internal/api/middleware"
 	"github.com/spectra-browser/spectra/internal/config"
 	"github.com/spectra-browser/spectra/internal/port"
+	"github.com/spectra-browser/spectra/ui"
 )
 
 type ServerDeps struct {
@@ -90,6 +92,18 @@ func NewServer(deps ServerDeps) http.Handler {
 		r.Post("/api/schedules", scheduleH.Create)
 		r.Get("/api/schedules", scheduleH.List)
 		r.Delete("/api/schedules/{id}", scheduleH.Delete)
+	}
+
+	// Serve UI — embedded React app from ui/dist/
+	if distFS, err := fs.Sub(ui.DistFS, "dist"); err == nil {
+		fileServer := http.FileServer(http.FS(distFS))
+		r.Get("/*", func(w http.ResponseWriter, r *http.Request) {
+			// Try to serve static file; fallback to index.html for SPA routing
+			if _, err := fs.Stat(distFS, r.URL.Path[1:]); err != nil {
+				r.URL.Path = "/"
+			}
+			fileServer.ServeHTTP(w, r)
+		})
 	}
 
 	return r

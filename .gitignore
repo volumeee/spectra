@@ -10,6 +10,7 @@ vendor/
 # Node
 node_modules/
 dist/
+ui/dist/
 *.tgz
 
 # Rust
@@ -31,5 +32,4 @@ spectra.db
 recordings/
 LAUNCH_GUIDE.md
 CATATAN_SPECTRA.md
-*.png
 *.pdf

@@ -1,4 +1,4 @@
-.PHONY: build build-cli build-plugins build-all test lint run docker-build docker-up clean
+.PHONY: build build-cli build-plugins build-ui build-all test lint run docker-build docker-up clean
 
 BINARY=spectra
 CLI_BINARY=spectra-cli
@@ -24,7 +24,10 @@ build-plugins:
 		fi; \
 	done
 
-build-all: build build-cli build-plugins
+build-ui:
+	cd ui && npm install && npm run build
+
+build-all: build-ui build build-cli build-plugins
 
 test:
 	go test -v -race ./...
@@ -43,3 +46,4 @@ docker-up:
 
 clean:
 	rm -rf $(BUILD_DIR)
+	rm -rf ui/dist ui/node_modules

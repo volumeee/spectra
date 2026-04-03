@@ -1,16 +1,20 @@
 <div align="center">
 
-🔮
+<img src="docs/banner-landscape.png" alt="Spectra Banner" width="100%" />
+
+<br/>
+
+<img src="docs/logo.png" alt="Spectra Logo" width="80" height="80" />
 
 # Spectra
 
 **Open-source headless browser infrastructure — pluggable, AI-native, production-grade.**
 
-[![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)]()
-[![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)]()
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker)]()
+[![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)]()
+[![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker)]()
 
 📸 Screenshot · 📄 PDF · 🕷️ Scrape · 🤖 AI Agent · 👻 Stealth · 🔍 Visual Diff · 🎥 Recorder
 
