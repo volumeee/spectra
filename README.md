@@ -2,10 +2,6 @@
 
 <img src="docs/banner-landscape.png" alt="Spectra Banner" width="100%" />
 
-<br/>
-
-<img src="docs/logo.png" alt="Spectra Logo" width="80" height="80" />
-
 # Spectra
 
 **Open-source headless browser infrastructure — pluggable, AI-native, production-grade.**
